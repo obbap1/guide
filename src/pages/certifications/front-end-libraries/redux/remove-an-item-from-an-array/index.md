@@ -3,8 +3,10 @@ title: Remove an Item from an Array
 ---
 ## Remove an Item from an Array
 
-This is a stub. <a href='https://github.com/freecodecamp/guides/tree/master/src/pages/certifications/front-end-libraries/redux/remove-an-item-from-an-array/index.md' target='_blank' rel='nofollow'>Help our community expand it</a>.
+To remove an item from the array, we can the use [filter](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter) method to take out the item with that particular index.
 
-<a href='https://github.com/freecodecamp/guides/blob/master/README.md' target='_blank' rel='nofollow'>This quick style guide will help ensure your pull request gets accepted</a>.
+```
+return state.filter((item,index) => index !== action.index)
+```
 
 <!-- The article goes here, in GitHub-flavored Markdown. Feel free to add YouTube videos, images, and CodePen/JSBin embeds  -->
